@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//  El ('/ayuda') es la url que hay que poner, si pones "pepe", funcionaria pero tienes que buscar pagina con "/pepe"
+
+Route ::get('/ayuda', function () {
+    return view('ayuda');
+});
